@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="w-dvw h-dvh bg-gray-600 flex flex-col bg-purple-50 p-0 lg:p-12 bg-[url('/assets/img/bg.jpg')] bg-cover bg-no-repeat"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Style and Icon Imports -->
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body class="drop-shadow-lg h-full flex flex-col rounded-md overflow-hidden">
+    <!-- header -->
+    <header class="bg-gray-100 flex flex-row justify-center">
+      <div class="w-full flex justify-between items-center">
+        <div class="bg-yellow-300 py-7 px-6 cursor-pointer">
+          <a class="font-semobold" href="index.html">Home</a>
+        </div>
+        <nav class="flex justify-end items-center gap-3 px-4">
+          <ul class="flex flex-row items-center gap-8">
+            <a class="uppercase" href="about-us.html" target="_blank"
+              >About Us</a
+            >
+            <a
+              class="uppercase font-bold"
+              href="data-extraction.html"
+              target="_blank"
+              >Data Extraction</a
+            >
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1 flex flex-row justify-center items-center bg-white">
+      <div class="max-w-3xl flex items-center justify-center w-full">
+        <div class="flex flex-col w-2/3">
+          <h2 class="text-2xl font-semibold text-center mt-3 mb-4">
+            Upload your files here...
+          </h2>
+          <label
+            for="dropzone-file"
+            class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+          >
+            <div class="flex flex-col items-center justify-center pt-5 pb-6">
+              <svg
+                class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 16"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+                />
+              </svg>
+              <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                <span class="font-semibold">Click to upload</span> or drag and
+                drop
+              </p>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                SVG, PNG, JPG or GIF (MAX. 800x400px)
+              </p>
+            </div>
+            <input id="dropzone-file" type="file" class="hidden" />
+          </label>
+          <button
+            class="mt-4 py-2 w-full bg-blue-500 text-white rounded-md uppercase"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-300 p-4">Footer</footer>
+  </body>
+
+  <script src="tailwindcss.js"></script>
+</html>
